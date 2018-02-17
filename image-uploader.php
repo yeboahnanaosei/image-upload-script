@@ -1,6 +1,6 @@
 <?php
 try {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['upload'])) {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['upload']) && isset($_FILES['pic']) && !empty($_FILES['pic'])) {
         
         // Grab particulars of uploaded file
         $imgName  = md5($_FILES['pic']['name']); // md5() to generate a different name from the original file name.

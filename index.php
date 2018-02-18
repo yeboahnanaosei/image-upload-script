@@ -9,7 +9,7 @@
 <body>
 <form id="image-form" method="post" enctype="multipart/form-data" action="image-uploader.php">
     <h3>Upload an image</h3>
-    <input type="file" name="pic" accept="image/*">
+    <input type="file" name="pic" accept=".jpg, .png, .jpeg, .gif">
     <input type="submit" value="Upload" name="upload">
 </form>
 </body>
